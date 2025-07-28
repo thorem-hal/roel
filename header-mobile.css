@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1D1D1D;
+}
+
+.button {
+display: none;
+}
+
+/* Togglebar */
+
+.nav-toggle {
+    top: 33%;
+    position: relative;
+    display: flex;
+    margin-right: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+    width: 40px;
+}
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: #AD9A68;
+    transition: all 100ms ease-in-out;
+    }
+
+    
+.nav-toggle:hover {
+    cursor: pointer;
+    }
+    
+    .x:nth-of-type(1) {
+    transition: all 100ms ease-in-out;
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 40px;
+    }
+    
+    .x:nth-of-type(2) {
+    transition: all 100ms ease-in-out;
+    transform-origin: center;
+    width: 0;
+    }
+    
+    .x:nth-of-type(3) {
+    transition: all 100ms ease-in-out;
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    width: 40px;
+    }
+
+.header {
+    display:auto;
+    z-index: 3;
+    background-color: #1D1D1D;
+    height: 120px;
+    margin:0;
+    position: fixed;
+    width: 100%;
+    justify-content: stretch;
+}
+
+#dropdown {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #AD9A68; /* Fallback color */
+     }
+
+.dropdown-item{
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "Roboto", serif;
+    color: #1D1D1D;
+    line-height: 100px;
+    margin-left: 10px;
+}
+
+.dropdown-item:hover{
+    text-decoration: underline;
+}
+
+
+#dropdown hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #1D1D1D;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.mini {
+    display: block;
+}
+
+.mini a{
+    font-size: 25px;
+    color: #1D1D1D;
+    text-decoration: none;
+    font-family: "Roboto", serif;
+    margin-left: 10px;
+    border: #1D1D1D solid 2px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.mini a:hover{
+    background-color: #1D1D1D;
+    color: #AD9A68;
+}
+
+.logo {
+    margin: 0;
+    float: left;
+    height: 90px;
+    width: 90px;
+    background-image: url('logo.png');
+    margin-top: 15px;
+    margin-left: 2.5%;
+    margin-right: 0;
+}
+
+.right {
+    float: right;
+    margin: auto 2.5% auto 0;
+}
+
+.left {
+    float: left;
+    margin: auto 150px auto 0;
+}

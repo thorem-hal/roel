@@ -1,0 +1,41 @@
+.unspecified {
+    background-image: url('unspecified.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.specialist-image {
+    background-image: url('specialist.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.poselentsy-image {
+    background-image: url('poselentsy.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.strah-image {
+    background-image: url('strah.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.staya-image {
+    background-image: url('staya.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.kapkan-image {
+    background-image: url('kapkan.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.zmei-image {
+    background-image: url('zmei.jpg');
+    background-position: center;
+    background-size: cover;
+}

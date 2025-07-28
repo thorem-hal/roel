@@ -1,0 +1,351 @@
+#changingimage {
+    z-index: 1;
+    margin-top: 120px;
+    display:flex;
+    height: 400px;
+    width: 97%;
+    margin: auto;
+    align-items: flex-end;
+    font-size: 48px;
+    font-family: 'Comfortaa';
+    color: white;
+    background-image: url('Group 1.png');
+    padding-left: 3%;
+    text-decoration: underline;
+    background-position: center;
+}
+
+#prevchangingimage {
+    position:absolute;
+    z-index: -1;
+    margin-top: 120px;
+    display:flex;
+    height: 400px;
+    width: 97%;
+    margin: auto;
+    align-items: flex-end;
+    font-size: 48px;
+    font-family: 'Comfortaa';
+    color: white;
+    background-image: url('Group 1.png');
+    background-position: center;
+    padding-left: 3%;
+    /* left: 4%; */
+    text-decoration: underline;
+}
+
+.headerwrapper {
+    padding: 60px;
+}
+
+.textblock {
+    font-family: 'Comfortaa';
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    margin: 100px auto 100px auto;
+}
+.paragraph-about {
+    color: white;
+    font-family: 'Comfortaa';
+    font-size: 24px;
+}
+.about {
+    display: block;
+    margin:2.5%;
+}
+
+#projects{
+    height:30px;
+}
+
+.image-about{
+    background-image: url('logo.svg');
+    background-position: center;
+    display: flex;
+    align-self: center;
+    margin:auto;
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.projects{
+    overflow: scroll;
+    height: 700px;
+    background-color:transparent;
+    background-position: center;
+}
+
+.unseen{
+    z-index: 1;
+    pointer-events: none;
+    position:sticky;
+    top:0%;
+}
+
+.fader{
+    z-index: -1;
+    width:100%;
+    position: absolute;
+}
+
+.fader2{
+    padding:100px;
+    margin:0;
+    z-index: 1;
+    block-size: 0;
+    background-image: linear-gradient( #1d1d1d, #1d1d1d00,#1d1d1d00, #1d1d1d);
+    width:100%;
+    height:700px;
+    background-size: cover;
+    margin-top:0;
+    padding:0;
+    top:250%;
+    position: absolute;
+}
+
+
+.projectbox{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-template-rows: 500px;
+    gap:5%;
+    margin: auto 10% auto 10%;
+}
+.project{
+    height:450px;
+}
+
+.project-image{
+    width: 100%;
+    height:500px;
+    margin: 5px 5px 10px 5px;
+    border-radius: 40px;
+    /* animation-name: fading;
+    animation-duration: 4s; */
+}
+
+.project-title{
+    font-family: 'Coda', system-ui;
+    color:white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+}
+.project-type{
+    font-family: 'Coda', system-ui;
+    color:white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    margin:0;
+}
+
+@keyframes fading{
+    from {opacity:100%;}
+    to {opacity:50%;}
+  }
+
+.contactbox{
+    display: block;
+    justify-content: stretch;
+    margin: 2.5%;
+}
+
+.contacts-description{
+    font-family: 'Comfortaa';
+    font-weight: 300;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.highlight{
+    color:#E7E1AD;
+}
+
+.projectdate {
+    font-family: 'Comfortaa';
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px auto 20px auto;}
+
+input, textarea {
+    display: block;
+    height: 80px;
+    padding:5px;
+    margin: 15px;
+    width: 90%;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+input::placeholder, textarea::placeholder{
+    color:#AD9A68;
+    font-family: 'Arial';
+    font-weight: 500;
+}
+
+input:focus, textarea:focus{
+    outline: none !important;
+    border:2px solid #AD9A68;
+    box-shadow: 0 0 10px #E7E1AD;
+    color:#635741;
+}
+
+input:focus::placeholder, textarea:focus::placeholder{
+    color:#AD9A68;
+    font-family: 'Arial';
+    font-weight: 500;
+}
+
+.reg {
+    color: #635741;
+    font-family: 'Arial';
+    font-weight: 300;
+    border: solid #C0AF90 2px; 
+    text-align: top;
+}
+
+#name-button{
+    height: 50px;
+}
+
+#phone-button{
+    height: 50px;
+}
+
+#message-button{
+    overflow: hidden;
+    text-overflow: clip;
+    height: 150px;
+}
+
+#email-button{
+    height: 50px;
+}
+
+#submit-button{
+    color: white;
+    font-family: 'Comfortaa';
+    border: solid 0 transparent;
+    padding: 2px;
+    background-image: linear-gradient(#1d1d1d, #1d1d1d), linear-gradient(180deg, #C0AF90, #635741);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    cursor: pointer;
+    height:35px;
+    font-size: 18px;
+}
+
+#submit-button:hover{
+    color: #1d1d1d;
+    padding: 0px;
+    background-image: linear-gradient(180deg, #C0AF90, #635741);
+    /* background-origin: border-box;
+    background-clip: content-box, border-box; */
+    cursor: pointer;
+}
+.socialbox{
+    margin-bottom: 30px;
+    border: 1px solid white;
+}
+.logo-vk{
+    height:180px;
+    width:180px;
+    margin-right: 20px;
+}
+.logo-tg{
+    height:150px;
+    width:150px;
+    padding:10px;
+}
+.apps-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: stretch;
+    margin-bottom: 20px;
+    margin-top:100px;
+}
+
+.apps-image{
+    height: 80px;
+    margin:auto;
+}
+
+.apps-text{
+    font-family: 'Comfortaa';
+    font-weight: 300;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.apps-image-container{
+    display: flex;
+    justify-content: center;
+}
+@keyframes increm {
+    from {height:120px;}
+    to {height:90px;}}
+@keyframes decrem {
+    from {height:90px;}
+    to {height:120px;}}
+
+@keyframes toggle-increm {
+    from {height:40px;
+    width: 40px;}
+    to {height:30px;
+    width: 30px;}}
+@keyframes toggle-decrem {
+    from {height:30px;
+    width: 30px;}
+    to {height:40px;
+    width: 40px;}}
+    
+@keyframes logo-increm {
+    from {height:90px;
+    width: 90px;}
+    to {height:60px;
+    width: 60px;}}
+@keyframes logo-decrem {
+    from {height:60px;
+    width: 60px;}
+    to {height:90px;
+    width: 90px;}}
+@keyframes increm-button {
+    from {background-color: transparent;
+    color: white;}
+    to {background-color: #C0AF90;
+        color: #1d1d1d;}}
+@keyframes decrem-button {
+    from {background-color: #C0AF90;
+    color: #1d1d1d;}
+    to {background-color: transparent;
+        color: white;}}
+
+@keyframes fade-out {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fader {
+    from {box-shadow: none;}
+    to {box-shadow: #C0AF90 0px 0px 15px 2px}
+}
+    
+@keyframes defader {
+    from {box-shadow: #C0AF90 0px 0px 15px 2px;}
+    to {box-shadow: none}
+}
