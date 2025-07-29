@@ -134,4 +134,4 @@ setInterval (function(){
     image.style.opacity = 1;
     ripe = 0}
   }
- , 4000);
+ , 15000);
