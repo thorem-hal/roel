@@ -15,6 +15,13 @@
     text-decoration: underline;
 }
 
+.pseudobox-top {
+    height:50px;
+}
+.pseudobox-bottom {
+    height:400px;
+}
+
 #prevchangingimage {
     position:absolute;
     z-index: -1;
