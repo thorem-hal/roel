@@ -6,7 +6,7 @@ var prev = document.getElementById("prevchangingimage");
 var logo = document.getElementById('logo');
 var project = document.getElementById('project');
 const buttons = document.getElementsByClassName('button');
-
+const loaders = document.getElementsByClassName('loader');
 let bars = document.querySelectorAll('.bar');
 let dropdown = document.getElementById('dropdown');
 let drop = document.getElementsByClassName('dropdown-item');
@@ -50,11 +50,18 @@ window.onresize = function(){
   }
 }
 
+function destroyer(e){
+  e.style.display = 'none';
+}
+
+for (let i = 0; i < covers.length; i++){
+covers[i].addEventListener('load', destroyer(loaders[i]))
+}
+
 toggle.addEventListener('click', toggleHamburger)
 for (let i = 0; i < drop.length; i++){
     drop[i].addEventListener('click', toggleHamburger)
 }
-
 window.onscroll = function() {scrollFunction()};
 for (let i = 0; i < buttons.length; i++){
     buttons[i].onmouseover = function(){
@@ -79,7 +86,8 @@ for (let i = 0; i < covers.length; i++){
         covers[i].style.animation = 'defader 0.2s';
         covers[i].style.boxShadow = 'None';
         covers[i].style.cursor = 'auto';
-      }};
+      }
+    };
 
 
 function scrollFunction() {
