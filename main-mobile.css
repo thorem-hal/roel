@@ -51,7 +51,9 @@
     font-size: 48px;
     font-family: 'Comfortaa';
     color: white;
-    background-image: url('Group 1.png');
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-left: 3%;
     text-decoration: underline;
     background-position: center;
@@ -69,7 +71,9 @@
     font-size: 48px;
     font-family: 'Comfortaa';
     color: white;
-    background-image: url('Group 1.png');
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     padding-left: 3%;
     /* left: 4%; */
