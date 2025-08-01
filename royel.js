@@ -127,7 +127,7 @@ function scrollFunction() {
 
 
 var imageSources = ["url('Group 1.png')", "url('Group 4.png')", "url('Group 3.png')", "url('Group 2.png')"]
-var imageNames = ["СТРАХ НАД<br> НЕВОЙ", "ЧТО-ТО<br> ПРОИСХОДИТ", "ЧТО-ТО<br> ЕСТЬ", "БРЕМЯ<br> МИРА"]
+var imageNames = ["СТРАХ НАД<br> НЕВОЙ", "ПРИГОВОР", "КАПКАН<br> ДЛЯ МОНСТРА", "<br> МИРА"]
 
 var index = 0;
 var ripe = 0
