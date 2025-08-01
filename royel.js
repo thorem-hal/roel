@@ -55,8 +55,13 @@ function destroyer(e){
   e.style.display = 'none';
 }
 
+const preloaders = ['specialist.jpg', 'poselentsy.jpg', 'zmei.jpg', 'kapkan.jpg', 'tayna.jpg', 'staya.jpg', 'repeynik.jpg', 'romashek.jpg', 'zhenih.jpg', 'neva.jpg', 'tenn.jpg', 'semm.jpg', 'vzglyad.jpg', 'pochta.jpg', 'konec.jpg', 'semm.jpg'];
+const imgs = [];
 for (let i = 0; i < covers.length; i++){
-covers[i].addEventListener('load', destroyer(loaders[i]))
+let preloaderImg = document.createElement("img");
+preloaderImg.src = preloaders[i];
+imgs.append(preloaderImg);
+imgs[i].addEventListener('load', destroyer(loaders[i]))
 }
 
 prev.addEventListener('load', destroyer(fulls[0]))
