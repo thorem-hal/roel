@@ -59,7 +59,7 @@ function destroyer(e, u){
 
 
 function destroyerr(e){
-  e.style.opacity = 'none';
+  e.style.display = 'none';
 }
 
 for (let i = 0; i < imgs.length; i++){
