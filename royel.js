@@ -59,7 +59,7 @@ for (let i = 0; i < covers.length; i++){
 covers[i].addEventListener('load', destroyer(loaders[i]))
 }
 
-image.addEventListener('load', destroyer(fulls[0]))
+prev.addEventListener('load', destroyer(fulls[0]))
 image.addEventListener('load', destroyer(fulls[1]))
 
 toggle.addEventListener('click', toggleHamburger)
