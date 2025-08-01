@@ -2,6 +2,7 @@ var header = document.getElementById("header");
 var image = document.getElementById("changingimage");
 var toggle = document.getElementById("togglebar");
 const covers = document.getElementsByClassName("project-image")
+const imgs = document.getElementsByClassName("imgc")
 var prev = document.getElementById("prevchangingimage");
 var logo = document.getElementById('logo');
 var project = document.getElementById('project');
@@ -55,13 +56,7 @@ function destroyer(e){
   e.style.display = 'none';
 }
 
-const preloaders = ['specialist.jpg', 'poselentsy.jpg', 'zmei.jpg', 'kapkan.jpg', 'tayna.jpg', 'staya.jpg', 'repeynik.jpg', 'romashek.jpg', 'zhenih.jpg', 'neva.jpg', 'tenn.jpg', 'semm.jpg', 'vzglyad.jpg', 'pochta.jpg', 'konec.jpg', 'semm.jpg'];
-const imgs = [];
-for (let i = 0; i < covers.length; i++){
-let preloaderImg = document.createElement("img");
-preloaderImg.style.height = '0';
-preloaderImg.src = preloaders[i];
-imgs.push(preloaderImg);
+for (let i = 0; i < imgs.length; i++){
 imgs[i].addEventListener('load', destroyer(loaders[i]))
 }
 
