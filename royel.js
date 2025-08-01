@@ -54,7 +54,7 @@ window.onresize = function(){
 
 function destroyer(e, u){
   e.style.display = 'none';
-  u.style.opacity = '1';
+  u.style.display = 'inline-block';
 }
 
 
