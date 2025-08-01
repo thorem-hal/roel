@@ -59,8 +59,9 @@ const preloaders = ['specialist.jpg', 'poselentsy.jpg', 'zmei.jpg', 'kapkan.jpg'
 const imgs = [];
 for (let i = 0; i < covers.length; i++){
 let preloaderImg = document.createElement("img");
+preloaderImg.style.height = '0';
 preloaderImg.src = preloaders[i];
-imgs.append(preloaderImg);
+imgs.push(preloaderImg);
 imgs[i].addEventListener('load', destroyer(loaders[i]))
 }
 
