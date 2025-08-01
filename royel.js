@@ -52,16 +52,22 @@ window.onresize = function(){
   }
 }
 
-function destroyer(e){
+function destroyer(e, u){
+  e.style.display = 'none';
+  u.style.display = 'inline-block';
+}
+
+
+function destroyerr(e){
   e.style.display = 'none';
 }
 
 for (let i = 0; i < imgs.length; i++){
-imgs[i].addEventListener('load', destroyer(loaders[i]))
+imgs[i].addEventListener('load', destroyer(loaders[i], imgs[i]))
 }
 
-prev.addEventListener('load', destroyer(fulls[0]))
-image.addEventListener('load', destroyer(fulls[1]))
+prev.addEventListener('load', destroyerr(fulls[0]))
+image.addEventListener('load', destroyerr(fulls[1]))
 
 toggle.addEventListener('click', toggleHamburger)
 for (let i = 0; i < drop.length; i++){
