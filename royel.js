@@ -54,12 +54,12 @@ window.onresize = function(){
 
 function destroyer(e, u){
   e.style.display = 'none';
-  u.style.display = 'inline-block';
+  u.style.opacity = '1';
 }
 
 
 function destroyerr(e){
-  e.style.display = 'none';
+  e.style.opacity = 'none';
 }
 
 for (let i = 0; i < imgs.length; i++){
