@@ -7,6 +7,7 @@ var logo = document.getElementById('logo');
 var project = document.getElementById('project');
 const buttons = document.getElementsByClassName('button');
 const loaders = document.getElementsByClassName('loader');
+const fulls = document.getElementsByClassName('fulloader');
 let bars = document.querySelectorAll('.bar');
 let dropdown = document.getElementById('dropdown');
 let drop = document.getElementsByClassName('dropdown-item');
@@ -57,6 +58,9 @@ function destroyer(e){
 for (let i = 0; i < covers.length; i++){
 covers[i].addEventListener('load', destroyer(loaders[i]))
 }
+
+image.addEventListener('load', destroyer(fulls[0]))
+image.addEventListener('load', destroyer(fulls[1]))
 
 toggle.addEventListener('click', toggleHamburger)
 for (let i = 0; i < drop.length; i++){
