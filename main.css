@@ -106,6 +106,12 @@
 #projects{
     height:100px;
 }
+#about{
+    height:100px;
+}
+#contacts{
+    height:100px;
+}
 
 .image-about{
     background-image: url('logounfull.svg');
