@@ -126,7 +126,7 @@ function scrollFunction() {
 };
 
 
-var imageSources = ["url('Group 1.png')", "url('3.png')", "url('2.jpg')"]
+var imageSources = ["url('1.jpg')", "url('3.png')", "url('2.jpg')"]
 var imageNames = ["СТРАХ НАД<br> НЕВОЙ", "ПРИГОВОР", "КАПКАН<br> ДЛЯ МОНСТРА"]
 
 var index = 0;
