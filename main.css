@@ -187,11 +187,10 @@
     border-radius: 40px;
     width: 100% ;
     height:100% ;
-    display: 'None';
 }
 
 .project-title{
-    font-family: 'Coda', system-ui;
+    font-family: 'Arial', sans-serif;
     color:white;
     font-weight: 600;
     text-align: center;
@@ -199,7 +198,7 @@
     margin: 0;
 }
 .project-type{
-    font-family: 'Coda', system-ui;
+    font-family: 'Arial', sans-serif;
     color:white;
     font-weight: 400;
     text-align: center;
