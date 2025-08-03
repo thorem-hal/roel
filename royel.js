@@ -25,7 +25,7 @@ function toggleHamburger(e) {
     logo.style.height = '60px';
     logo.style.width = '60px';
     HamToggler = 1;
-  }
+  } 
   else {
     dropdown.style.animation = 'fade-out 0.2s';
     setTimeout( function(){
