@@ -12,6 +12,15 @@ let dropdown = document.getElementById('dropdown');
 let drop = document.getElementsByClassName('dropdown-item');
 let HamToggler = 0;
 
+// logo.onmouseover = function(){
+//   logo.src = 'logo.gif';
+//   logo.style.objectFit = 'cover';
+// };
+// logo.onmouseleave = function(){
+//   logo.src = 'logo.svg';
+//   logo.style.objectFit = 'none';
+// };
+
 function toggleHamburger(e) {
   if (HamToggler == 0){
     dropdown.style.animation = 'fade-in 0.2s';
@@ -108,7 +117,7 @@ function scrollFunction() {
 
 
 var imageSources = ["url('1.jpg')", "url('3.png')", "url('2.jpg')"]
-var imageNames = ["СТРАХ НАД<br> НЕВОЙ", "ПРИГОВОР", "КАПКАН<br> ДЛЯ МОНСТРА"]
+var imageNames = ["СТРАХ<br>НАД НЕВОЙ", "ПРИГОВОР", "КАПКАН<br> ДЛЯ МОНСТРА"]
 
 var index = 0;
 var ripe = 0
