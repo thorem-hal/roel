@@ -321,15 +321,15 @@ input:focus::placeholder, textarea:focus::placeholder{
     width: 40px;}}
     
 @keyframes logo-increm {
-    from {height:90px;
-    width: 90px;}
-    to {height:60px;
-    width: 60px;}}
-@keyframes logo-decrem {
-    from {height:60px;
-    width: 60px;}
+    from {height:120px;
+    width: 120px;}
     to {height:90px;
     width: 90px;}}
+@keyframes logo-decrem {
+    from {height:90px;
+    width: 90px;}
+    to {height:120px;
+    width: 120px;}}
 @keyframes increm-button {
     from {background-color: transparent;
     color: white;}

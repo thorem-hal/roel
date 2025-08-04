@@ -334,10 +334,10 @@ input:focus::placeholder, textarea:focus::placeholder{
     from {height:120px;}
     to {height:90px;}}
 @keyframes logo-increm {
-    from {height:90px;
-    width: 90px;}
-    to {height:60px;
-    width: 60px;}}
+    from {height:120px;
+    width: 120px;}
+    to {height:90px;
+    width: 90px;}}
 @keyframes increm-button {
     from {background-color: transparent;
     color: white;}

@@ -100,8 +100,9 @@ function scrollFunction() {
     header.style.height = "90px";
     toggle.style.height = "30px";
     toggle.style.width = "30px";
-    logo.style.height = '60px';
-    logo.style.width = '60px';
+    logo.style.height = '90px';
+    logo.style.width = '90px';
+    logo.style.marginTop = '0px';
   } else {
     header.style.animation = "None";
     logo.style.animation = "None";
@@ -109,8 +110,9 @@ function scrollFunction() {
     toggle.style.height = '40px';
     toggle.style.width = '40px';
     header.style.height = "120px";
-    logo.style.height = '90px';
-    logo.style.width = '90px';
+    logo.style.height = '120px';
+    logo.style.width = '120px';
+    logo.style.marginTop = '5px';
 
 } }
 };
